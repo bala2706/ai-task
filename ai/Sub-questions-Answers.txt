@@ -1,0 +1,50 @@
+1. Why Did You Choose the Particular Algorithm?
+
+Algorithm Chosen: Random Forest
+
+Reason for Choice:
+
+Versatility: Random Forest is a versatile algorithm that performs well on both classification and regression tasks. It can handle a mix of numerical and categorical features, which is ideal for our dataset.
+Robustness: It is less prone to overfitting compared to a single decision tree because it averages the predictions of multiple trees, which increases the model's robustness.
+Feature Importance: Random Forest provides insights into feature importance, which helps in understanding which features are most influential in the classification.
+Handling Imbalanced Data: It performs well with imbalanced datasets, which can be useful if there are discrepancies in the number of instances across different classes.
+
+2. What Are the Different Tuning Methods Used for the Algorithm?
+
+Tuning Methods:
+
+Hyperparameter Tuning: Grid Search was used to explore different combinations of hyperparameters to find the optimal settings for the Random Forest model. Key parameters tuned include:
+ n_estimators: The number of trees in the forest.
+ max_depth: The maximum depth of each tree.
+ min_samples_split: The minimum number of samples required to split an internal node.
+
+3. Did You Consider Any Other Choice of Algorithm? Why or Why Not?
+
+Considered Algorithms:
+
+Decision Trees: Simple and interpretable but prone to overfitting.
+Logistic Regression: Suitable for binary classification, but may not capture complex relationships as effectively as Random Forest.
+Support Vector Machines (SVM): Effective for high-dimensional spaces but can be computationally expensive and less interpretable.
+
+Decision:
+
+Chosen Algorithm: Random Forest was preferred due to its robustness, ability to handle a mix of feature types, and better performance in terms of accuracy and interpretability in this context.
+
+4. What Is the Accuracy?
+
+Accuracy:
+
+Before Hyperparameter Tuning: 90.10%
+After Hyperparameter Tuning: 90.17%
+Improvement: The accuracy improved slightly after tuning, demonstrating the effectiveness of the parameter adjustments.
+
+5. What Are the Different Types of Metrics That Can Be Used to Evaluate the Model?
+
+Evaluation Metrics:
+
+Accuracy: The proportion of correctly predicted instances out of the total instances.
+Precision: The proportion of true positive predictions among all positive predictions.
+Recall: The proportion of true positive predictions among all actual positive instances.
+F1 Score: The harmonic mean of precision and recall, providing a balance between the two metrics.
+Confusion Matrix: A table that shows the counts of true positive, true negative, false positive, and false negative predictions.
+ROC Curve and AUC: The Receiver Operating Characteristic curve and Area Under the Curve measure the model's ability to distinguish between classes.
